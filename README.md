@@ -1,101 +1,131 @@
-# 🧘 Yoga Pose AI - ML & DL Powered Pose Correction System
-
+🧘 Yoga Pose AI - ML & DL Powered Pose Correction System
 Complete yoga pose detection and correction system with Machine Learning and Deep Learning models, real-time analysis, and dataset integration.
 
-## 📋 Table of Contents
+📋 Table of Contents
+Features
 
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [Dataset Setup](#dataset-setup)
-- [Training Models](#training-models)
-- [Running the Application](#running-the-application)
-- [Model Architecture](#model-architecture)
-- [API Documentation](#api-documentation)
+Project Structure
 
-## ✨ Features
+Installation
 
-### 🤖 Machine Learning Models
-- **Random Forest** - Ensemble learning with decision trees
-- **Support Vector Machine (SVM)** - Kernel-based classification
-- **XGBoost** - Gradient boosting for high performance
-- **K-Nearest Neighbors** - Instance-based learning
-- **Decision Tree** - Simple interpretable model
-- **Naive Bayes** - Probabilistic classifier
-- **Logistic Regression** - Linear classification baseline
+Dataset Setup
 
-### 🧠 Deep Learning Models
-- **Dense Neural Network** - Multi-layer perceptron with dropout
-- **1D CNN** - Convolutional network for sequence data
-- **LSTM** - Long Short-Term Memory for temporal patterns
-- **Hybrid CNN-LSTM** - Combined architecture for best performance
+Training Models
 
-### 📊 Complete ML Pipeline
-1. **Dataset Retrieval** - Download from Kaggle and other sources
-2. **Preprocessing** - Image processing and landmark extraction
-3. **Feature Engineering** - Angle, distance, and symmetry features
-4. **Model Selection** - Multiple algorithms comparison
-5. **Hyperparameter Tuning** - Optimization for best performance
-6. **Validation** - Cross-validation and holdout testing
-7. **Evaluation** - Comprehensive metrics and confusion matrices
+Running the Application
 
-### 🎯 Real-time Features
-- Live webcam pose analysis
-- Photo upload and analysis
-- Real-time feedback and corrections
-- Pose classification and scoring
-- Multiple pose support (Mountain, Warrior II, Tree, Downward Dog, etc.)
+Model Architecture
 
-## 📁 Project Structure
+API Documentation
 
-```
+Model Performance
+
+Customization
+
+Troubleshooting
+
+License
+
+Acknowledgments
+
+Support
+
+✨ Features
+🤖 Machine Learning Models
+Random Forest - Ensemble learning with decision trees
+
+Support Vector Machine (SVM) - Kernel-based classification
+
+XGBoost - Gradient boosting for high performance
+
+K-Nearest Neighbors - Instance-based learning
+
+Decision Tree - Simple interpretable model
+
+Naive Bayes - Probabilistic classifier
+
+Logistic Regression - Linear classification baseline
+
+🧠 Deep Learning Models
+Dense Neural Network - Multi-layer perceptron with dropout
+
+1D CNN - Convolutional network for sequence data
+
+LSTM - Long Short-Term Memory for temporal patterns
+
+Hybrid CNN-LSTM - Combined architecture for best performance
+
+📊 Complete ML Pipeline
+Dataset Retrieval - Download from Kaggle and other sources
+
+Preprocessing - Image processing and landmark extraction
+
+Feature Engineering - Angle, distance, and symmetry features
+
+Model Selection - Multiple algorithms comparison
+
+Hyperparameter Tuning - Optimization for best performance
+
+Validation - Cross-validation and holdout testing
+
+Evaluation - Comprehensive metrics and confusion matrices
+
+🎯 Real-time Features
+Live webcam pose analysis
+
+Photo upload and analysis
+
+Real-time feedback and corrections
+
+Pose classification and scoring
+
+Multiple pose support (Mountain, Warrior II, Tree, Downward Dog, etc.)
+
+📁 Project Structure
+Plaintext
+
 YogaPoseML/
 ├── backend/
-│   ├── main.py                     # FastAPI server
-│   ├── data_preprocessor.py        # Dataset preprocessing
-│   ├── feature_engineer.py         # Feature extraction
-│   ├── ml_trainer.py              # ML model training
-│   ├── dl_trainer.py              # DL model training
-│   ├── pose_analyzer.py           # Pose analysis logic
-│   ├── pose_classifier.py         # Pose classification
-│   ├── enhanced_pose_analyzer.py  # Advanced analysis
-│   └── advanced_analyzer.py       # Expert system
+│   ├── main.py                   # FastAPI server
+│   ├── data_preprocessor.py      # Dataset preprocessing
+│   ├── feature_engineer.py       # Feature extraction
+│   ├── ml_trainer.py             # ML model training
+│   ├── dl_trainer.py             # DL model training
+│   ├── pose_analyzer.py          # Pose analysis logic
+│   ├── pose_classifier.py        # Pose classification
+│   ├── enhanced_pose_analyzer.py # Advanced analysis
+│   └── advanced_analyzer.py      # Expert system
 ├── frontend/
 │   ├── src/
-│   │   ├── App.js                 # Main React component
+│   │   ├── App.js                # Main React component
 │   │   ├── App.css
 │   │   └── index.js
 │   ├── components/
-│   │   ├── LiveAnalysis.js        # Live camera component
-│   │   ├── PhotoAnalysis.js       # Photo upload component
+│   │   ├── LiveAnalysis.js       # Live camera component
+│   │   ├── PhotoAnalysis.js      # Photo upload component
 │   │   └── *.css
 │   └── public/
 │       └── index.html
 ├── dataset/
-│   ├── raw/                       # Raw downloaded datasets
-│   ├── processed/                 # Preprocessed features
-│   ├── train/                     # Training split
-│   ├── test/                      # Test split
-│   └── validation/                # Validation split
-├── models/                        # Trained models
-├── notebooks/                     # Jupyter notebooks
+│   ├── raw/                      # Raw downloaded datasets
+│   ├── processed/                # Preprocessed features
+│   ├── train/                    # Training split
+│   ├── test/                     # Test split
+│   └── validation/               # Validation split
+├── models/                       # Trained models
+├── notebooks/                    # Jupyter notebooks
 ├── utils/
 │   └── dataset_downloader.py     # Dataset download helper
 ├── requirements.txt
 └── README.md
-```
+🚀 Installation
+1. Clone or Extract the Project
+Bash
 
-## 🚀 Installation
-
-### 1. Clone or Extract the Project
-
-```bash
 cd YogaPoseML
-```
+2. Create Virtual Environment (Recommended)
+Bash
 
-### 2. Create Virtual Environment (Recommended)
-
-```bash
 python -m venv venv
 
 # On Windows:
@@ -103,143 +133,142 @@ venv\Scripts\activate
 
 # On macOS/Linux:
 source venv/bin/activate
-```
+3. Install Dependencies
+Bash
 
-### 3. Install Dependencies
-
-```bash
 pip install -r requirements.txt
-```
+📥 Dataset Setup
+Option 1: Download Yoga-82 Dataset (Recommended)
+Visit: https://sites.google.com/view/yoga-82/home
 
-## 📥 Dataset Setup
+Fill the form to request download access
 
-### Option 1: Download Yoga-82 Dataset (Recommended)
+Extract to: dataset/raw/yoga82/
 
-1. Visit: https://sites.google.com/view/yoga-82/home
-2. Fill the form to request download access
-3. Extract to: `dataset/raw/yoga82/`
+Option 2: Kaggle Datasets
+Install Kaggle CLI:
 
-### Option 2: Kaggle Datasets
+Bash
 
-**Install Kaggle CLI:**
-```bash
 pip install kaggle
-```
+Setup Kaggle credentials:
 
-**Setup Kaggle credentials:**
-1. Go to https://www.kaggle.com/settings
-2. Click "Create New API Token"
-3. Save `kaggle.json` to `~/.kaggle/`
-4. Run: `chmod 600 ~/.kaggle/kaggle.json`
+Go to https://www.kaggle.com/settings
 
-**Download Yoga-16 Dataset:**
-```bash
+Click "Create New API Token"
+
+Save kaggle.json to ~/.kaggle/
+
+Run: chmod 600 ~/.kaggle/kaggle.json
+
+Download Yoga-16 Dataset:
+
+Bash
+
 kaggle datasets download -d mohiuddin2531/yoga-16
 unzip yoga-16.zip -d dataset/raw/yoga16/
-```
+Download Yoga Poses Dataset (5 poses):
 
-**Download Yoga Poses Dataset (5 poses):**
-```bash
+Bash
+
 kaggle datasets download -d ujjwalchowdhury/yoga-pose-classification
 unzip yoga-pose-classification.zip -d dataset/raw/yoga5/
-```
+Option 3: Get Download Instructions
+Bash
 
-### Option 3: Get Download Instructions
-
-```bash
 python utils/dataset_downloader.py
-```
+🎓 Training Models
+Step 1: Preprocess Dataset
+Bash
 
-## 🎓 Training Models
-
-### Step 1: Preprocess Dataset
-
-```bash
 python backend/data_preprocessor.py
-```
-
 This will:
-- Extract pose landmarks using MediaPipe
-- Create feature vectors (angles, distances, symmetry)
-- Split into train/validation/test sets (70/20/10)
-- Normalize features
-- Save processed data
 
-### Step 2: Train ML Models
+Extract pose landmarks using MediaPipe
 
-```bash
+Create feature vectors (angles, distances, symmetry)
+
+Split into train/validation/test sets (70/20/10)
+
+Normalize features
+
+Save processed data
+
+Step 2: Train ML Models
+Bash
+
 python backend/ml_trainer.py
-```
-
 Trains:
-- Random Forest
-- SVM
-- XGBoost
-- K-NN
-- Decision Tree
-- Naive Bayes
-- Logistic Regression
 
-Results saved to `models/` directory.
+Random Forest
 
-### Step 3: Train DL Models
+SVM
 
-```bash
+XGBoost
+
+K-NN
+
+Decision Tree
+
+Naive Bayes
+
+Logistic Regression
+
+Results saved to models/ directory.
+
+Step 3: Train DL Models
+Bash
+
 python backend/dl_trainer.py
-```
-
 Trains:
-- Dense Neural Network
-- 1D CNN
-- LSTM
-- Hybrid CNN-LSTM
+
+Dense Neural Network
+
+1D CNN
+
+LSTM
+
+Hybrid CNN-LSTM
 
 Best models saved with checkpoints.
 
-## 🖥️ Running the Application
+🖥️ Running the Application
+Start Backend Server
+Bash
 
-### Start Backend Server
-
-```bash
 cd backend
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
-```
-
 API will be available at: http://localhost:8000
 
-### Start Frontend (Optional)
+Start Frontend (Optional)
+Bash
 
-```bash
 cd frontend
 npm install
 npm start
-```
-
 Frontend will be available at: http://localhost:3000
 
-### Test the API
+Test the API
+Health Check:
 
-**Health Check:**
-```bash
+Bash
+
 curl http://localhost:8000/health
-```
+Analyze Photo:
 
-**Analyze Photo:**
-```bash
+Bash
+
 curl -X POST -F "file=@yoga_image.jpg" -F "pose_type=mountain" \
   http://localhost:8000/analyze-photo/
-```
+Get Supported Poses:
 
-**Get Supported Poses:**
-```bash
+Bash
+
 curl http://localhost:8000/supported-poses
-```
+🏗️ Model Architecture
+ML Pipeline
+Plaintext
 
-## 🏗️ Model Architecture
-
-### ML Pipeline
-
-```
 Raw Image
     ↓
 MediaPipe Pose Detection
@@ -258,58 +287,57 @@ StandardScaler Normalization
 ML Classifier
     ↓
 Pose Prediction + Confidence
-```
+DL Architecture
+Dense Neural Network:
 
-### DL Architecture
+Plaintext
 
-**Dense Neural Network:**
-```
 Input (132) → Dense(256) → BatchNorm → Dropout(0.4) →
 Dense(128) → BatchNorm → Dropout(0.3) →
 Dense(64) → BatchNorm → Dropout(0.2) →
 Dense(32) → Dropout(0.1) →
 Output (num_classes) Softmax
-```
+CNN Architecture:
 
-**CNN Architecture:**
-```
+Plaintext
+
 Input (132, 1) → Conv1D(64) → BatchNorm → MaxPool → Dropout →
 Conv1D(128) → BatchNorm → MaxPool → Dropout →
 Conv1D(256) → BatchNorm → GlobalAvgPool →
 Dense(128) → Dropout → Output Softmax
-```
+LSTM Architecture:
 
-**LSTM Architecture:**
-```
+Plaintext
+
 Input (132) → Reshape(33, 4) →
 LSTM(128, return_seq) → Dropout →
 LSTM(64, return_seq) → Dropout →
 LSTM(32) → Dropout →
 Dense(64) → Dropout → Output Softmax
-```
-
-## 📡 API Documentation
-
-### Endpoints
-
-#### `GET /`
+📡 API Documentation
+Endpoints
+GET /
 Root endpoint with API information
 
-#### `GET /health`
+GET /health
 Health check endpoint
 
-#### `GET /supported-poses`
+GET /supported-poses
 Get list of supported yoga poses
 
-#### `POST /analyze-photo/`
+POST /analyze-photo/
 Analyze yoga pose from uploaded image
 
-**Parameters:**
-- `file`: Image file (multipart/form-data)
-- `pose_type`: Expected pose type (optional)
+Parameters:
 
-**Response:**
-```json
+file: Image file (multipart/form-data)
+
+pose_type: Expected pose type (optional)
+
+Response:
+
+JSON
+
 {
   "status": "success",
   "analysis": {
@@ -328,91 +356,95 @@ Analyze yoga pose from uploaded image
   "landmarks_detected": true,
   "timestamp": "2024-10-22T12:00:00"
 }
-```
-
-#### `WebSocket /ws/live-analysis`
+WebSocket /ws/live-analysis
 Real-time webcam analysis
 
-**Send:** Base64 encoded image frames
+Send: Base64 encoded image frames
 
-**Receive:** Real-time analysis results
+Receive: Real-time analysis results
 
-## 📊 Model Performance
-
+📊 Model Performance
 After training, models are evaluated on test set with metrics:
-- **Accuracy** - Overall classification accuracy
-- **Precision** - True positives / (True positives + False positives)
-- **Recall** - True positives / (True positives + False negatives)
-- **F1-Score** - Harmonic mean of precision and recall
-- **Confusion Matrix** - Detailed class-wise performance
 
-Results are saved to `models/` directory.
+Accuracy - Overall classification accuracy
 
-## 🛠️ Customization
+Precision - True positives / (True positives + False positives)
 
-### Add New Pose
+Recall - True positives / (True positives + False negatives)
 
-1. Add images to `dataset/raw/your_pose/`
-2. Run preprocessing: `python backend/data_preprocessor.py`
-3. Retrain models: `python backend/ml_trainer.py`
-4. Update `main.py` to include new pose
+F1-Score - Harmonic mean of precision and recall
 
-### Adjust Feature Engineering
+Confusion Matrix - Detailed class-wise performance
 
-Edit `backend/feature_engineer.py` to:
-- Add new angle calculations
-- Include additional distance metrics
-- Modify symmetry features
+Results are saved to models/ directory.
 
-### Hyperparameter Tuning
+🛠️ Customization
+Add New Pose
+Add images to dataset/raw/your_pose/
 
-Edit `backend/ml_trainer.py` or `backend/dl_trainer.py`:
-- Adjust model parameters
-- Change learning rates
-- Modify batch sizes
-- Update epochs
+Run preprocessing: python backend/data_preprocessor.py
 
-## 🐛 Troubleshooting
+Retrain models: python backend/ml_trainer.py
 
-### Issue: Dataset not found
-**Solution:** Run `python utils/dataset_downloader.py` for instructions
+Update main.py to include new pose
 
-### Issue: MediaPipe not working
-**Solution:** Install system dependencies:
-```bash
+Adjust Feature Engineering
+Edit backend/feature_engineer.py to:
+
+Add new angle calculations
+
+Include additional distance metrics
+
+Modify symmetry features
+
+Hyperparameter Tuning
+Edit backend/ml_trainer.py or backend/dl_trainer.py:
+
+Adjust model parameters
+
+Change learning rates
+
+Modify batch sizes
+
+Update epochs
+
+🐛 Troubleshooting
+Issue: Dataset not found
+Solution: Run python utils/dataset_downloader.py for instructions
+
+Issue: MediaPipe not working
+Solution: Install system dependencies:
+
+Bash
+
 # Ubuntu/Debian
 sudo apt-get install libgl1-mesa-glx
 
 # macOS
 brew install opencv
-```
+Issue: TensorFlow GPU not detected
+Solution: Install CUDA and cuDNN compatible versions
 
-### Issue: TensorFlow GPU not detected
-**Solution:** Install CUDA and cuDNN compatible versions
+Issue: Port already in use
+Solution: Change port in command:
 
-### Issue: Port already in use
-**Solution:** Change port in command:
-```bash
+Bash
+
 uvicorn main:app --reload --port 8001
-```
-
-## 📝 License
-
+📝 License
 This project is for educational purposes. Datasets may have their own licenses.
 
-## 🙏 Acknowledgments
+🙏 Acknowledgments
+MediaPipe by Google
 
-- MediaPipe by Google
-- Yoga-82 Dataset by IIT Gandhinagar
-- Kaggle Community for datasets
-- OpenCV and TensorFlow teams
+Yoga-82 Dataset by IIT Gandhinagar
 
-## 📧 Support
+Kaggle Community for datasets
 
+OpenCV and TensorFlow teams
+
+📧 Support
 For issues, feature requests, or questions, please open an issue in the repository.
 
----
-
-**Happy Coding! 🧘‍♀️🤖**
-#   Y o g a - p o s e - c o r r e c t i o n  
+Happy Coding! 🧘‍♀️🤖#   Y o g a - p o s e - c o r r e c t i o n  
  
