@@ -1,0 +1,9 @@
+# Dependencies
+/node_modules
+/frontend/node_modules
+/backend/venv
+
+# Other common files to ignore
+.DS_Store
+*.log
+.env
