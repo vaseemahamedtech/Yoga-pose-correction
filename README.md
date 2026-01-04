@@ -1,7 +1,3 @@
-Got it! I’ll **trim your Yoga Pose AI README** to include **only the essential, necessary content** while keeping it professional, clear, and concise. Here’s the cleaned-up version:
-
----
-
 # Yoga Pose AI: ML & DL Powered Pose Correction System
 
 A real-time yoga pose detection and correction system powered by Machine Learning and Deep Learning models. Supports multiple yoga poses, provides live webcam analysis, and gives actionable feedback for pose improvement.
