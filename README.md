@@ -446,5 +446,4 @@ OpenCV and TensorFlow teams
 📧 Support
 For issues, feature requests, or questions, please open an issue in the repository.
 
-Happy Coding! 🧘‍♀️🤖#   Y o g a - p o s e - c o r r e c t i o n  
- 
+Happy Coding! 🧘‍♀️🤖
